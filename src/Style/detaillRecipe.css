@@ -1,0 +1,60 @@
+.Container{
+    display: flex;
+    justify-content: center;
+    padding: 3px 0px;
+    margin: 0px 10px;
+}
+
+.rightContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.shortCard {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    width: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+}
+
+.shortCard p {
+    font-size: 1em;
+    color: #777;
+}
+
+.headingAndImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.headingAndImage h2{
+    font-size: 25px;
+}
+
+.details{
+    width: 140%;
+    padding: 15px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.details span{
+    font: bold;
+    color: black;
+    font-size: larger;
+}
+
+.details h3{
+    color: rgba(52, 61, 61, 0.993);
+    padding-bottom: 20px;
+}
+
+.details p{
+    font-size: medium;
+    color: rgb(95, 93, 93);
+}
