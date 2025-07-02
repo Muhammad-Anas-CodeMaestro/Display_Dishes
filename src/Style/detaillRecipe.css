@@ -1,25 +1,29 @@
-.Container{
+.Container {
     display: flex;
     justify-content: center;
-    padding: 3px 0px;
+    /* width: 100%; */
+    padding: 5px 0px;
     margin: 0px 10px;
 }
 
-.rightContainer{
+.rightContainer {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    /* width: 2000px; */
 }
 
 .shortCard {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 5px;
-    width: 90%;
+    /* margin: 10px; */
+    width: 110%;
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
     display: flex;
+    flex-direction: column;
 }
 
 .shortCard p {
@@ -33,28 +37,57 @@
     border-radius: 8px 8px 0 0;
 }
 
-.headingAndImage h2{
+.headingAndImage h2 {
     font-size: 25px;
+    margin: 10px 0;
 }
 
-.details{
-    width: 140%;
-    padding: 15px 15px;
+.details {
+    width: 100%;
+    padding: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.details span{
-    font: bold;
+.details span {
+    font-weight: bold;
     color: black;
     font-size: larger;
 }
 
-.details h3{
+.details h3 {
     color: rgba(52, 61, 61, 0.993);
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
-.details p{
+.details p {
     font-size: medium;
     color: rgb(95, 93, 93);
+}
+
+/* ============ Responsive Breakpoints ============ */
+
+@media (min-width: 700px) {
+    .shortCard {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .headingAndImage {
+        width: 40%;
+    }
+
+    .details {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .Container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .shortCard {
+        width: 70%;
+    }
 }

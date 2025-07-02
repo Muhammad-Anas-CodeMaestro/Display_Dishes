@@ -18,7 +18,7 @@ function Recipe({ data }) {   // Props / data Receive
               nisi itaque aspernatur, perferendis est vel, quis nam iusto at
               ipsa atque explicabo, dolorem architecto quas.
             </p>
-            <Link to={"/receipe/"+value?.id} state={value}><button className="add-cart-button">For more Detail</button></Link>  { /* Use Link for routing */ }
+            <Link to={"/receipe/"+value?.id} state={value}><button className="detailButton">For more Detail</button></Link>  { /* Use Link for routing */ }
           </div>
         );
       })}
